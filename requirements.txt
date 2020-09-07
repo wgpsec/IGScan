@@ -1,0 +1,4 @@
+python-masscan==0.1.6
+python-nmap==0.6.1
+requests==2.24.0
+webanalyzer==2019.8.22
