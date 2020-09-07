@@ -1,21 +1,15 @@
 import argparse
 from Controller.Start import IGScan
-
+from Script.Welcome import WgpBanner
 """
 @auther: ro4lsc 
-@version: v0.3
+@version: v0.8
 @descript: GetSubdomain模块: 获取子域名
            CheckURL模块: 判断存活链接
            PortScan模块: 端口扫描
            Anaylzer模块: Web容器指纹扫描
 @time: 2020-08-09
 """
-version = '0.8'
-author = 'ro4lsc'
-IGScan_banner = """
-Welcome to IGScan!
-Version:%s Author: %s
-""" % (version, author)
 # Usage: python3 IGScan.py -u testphp.vulnweb.com -m subdomain,checkurl,webanaylzer
 #        python3 IGScan.py -f targets.txt -m subdomain,checkurl,webanaylzer
 #        python3 IGScan.py -i 127.0.0.1
@@ -31,7 +25,7 @@ targets_file = args.file
 hosts = args.ip
 url = args.url
 module = args.module
-print(IGScan_banner)
+print(WgpBanner())
 
 IGScan = IGScan(url, targets_file, hosts, module)
 IGScan.Start()
