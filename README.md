@@ -1,4 +1,6 @@
 # IGScan(Infomation Gathering Scan)
+⚠️目前仅支持macOS  Linux系统
+Windows平台会爆各种奇奇怪怪的错误
 ## What can it do? 
 一、收集子域名
 <br/>
